@@ -1,0 +1,276 @@
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #2196f3;
+  --main-color-alt: #1787e0;
+  --main-transition: 0.3s;
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
+  --section-background: #ececec;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Cairo", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* Start header */
+header{
+  background: #1e7799;
+color: white;
+}
+header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .nav{
+  display: flex;
+  padding: 20px 0;
+  gap:20px;
+}
+header .nav li{
+  transition:0.5s;
+  cursor: pointer;
+}
+header .nav li:hover{
+  color: #1e7799;
+text-shadow: 1px 0px 5px white;
+}
+header .social{
+  display: flex;
+align-items: center;
+gap: 20px;
+}
+header .social li a{
+  color: white;
+  transition: 0.5s;
+}
+header .social li a:hover{
+      color: #0f5a76;
+}
+
+.logo{
+  font-size: 30px;
+  font-family: 'Fjalla One', sans-serif;
+width: 100%;
+text-align: center;
+padding: 20px;
+font-weight: 500;
+color: lightgrey;
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+.logo span{
+  font-size: 35px;
+color: #18627e;
+}
+/*
+header .social li{
+  font-size: 23px;
+  background: white;
+  border-radius: 50%;
+  text-align: center;
+  padding: 10px;
+}
+header .social li:first-child{
+  padding:10px 15px;
+}
+header .social li a{
+      color: #1e7799;
+}*/
+/* End Header */
+/* Start Posts */
+.content{
+background: #eee;
+}
+.content .container{
+  display: flex;
+gap: 5%;
+flex-wrap: wrap;
+padding:30px 0;
+}
+.content .posts{
+  flex-basis: 65%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.content .post{
+ background: white;
+ text-align: center;
+ height: fit-content;
+}
+.content .post img{
+  max-width: 100%;
+}
+.content .post h2{
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 500;
+  color: #18627e;
+  margin: 20px 0 5px 0;
+}
+.content .post .tags{
+  font-weight: bold;
+  color: #777;
+}
+.content .post p{
+  padding: 30px;
+  text-align: left;
+  margin: 0;
+}
+/* End Posts */
+/* Start Side Menu */
+.side{
+  flex:1;
+  text-align: center;
+  gap:20px;
+}
+.side img{
+  max-width: 100%;
+}
+.side-menu{
+  background: white;
+  align-items: center;
+  flex: 1;
+  height: fit-content;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.side-menu h2{
+  background: #ddd;
+margin: 0;
+padding: 20px;
+color: #1e7799;
+}
+.side-menu .side-item{
+  font-size: 20px;
+  padding: 20px;
+  text-align: left;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.side-menu .side-item:hover{
+  padding-left: 30px;
+  color: #1e7799;
+}
+.side .author{
+  background: white;
+  position: relative;
+}
+.side .author .avatar{
+  position: absolute;
+left: 50%;
+width: 150px;
+top:190px;
+border-radius: 50%;
+height: 150px;
+border: 2px white solid;
+transform: translate(-50%,-50%);
+}
+.side .author h3{
+  color: #1e7799;
+  margin-top: 83px;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 100;
+  font-size: 25px;
+}
+.side .author p{
+  padding: 0 15px;
+}
+.side .author .social{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+.side .author .social li{
+  border: 1px solid #777;
+  padding: 10px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.side .author .social li:hover{
+  background: #777;
+}
+.side .author .social li:hover a{
+  color: white;
+}
+.side .author .social li:first-child{
+  padding:10px 15px;
+}
+.side .author .social li a{
+  color: #777;
+  transition: 0.5s;
+}
+/* End Side Menu */
+/* Start pagination */
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  gap: 20px;
+}
+.pagination .page{
+  background: #18627e;
+padding: 10px 15px;
+color: white;
+transition: 0.5s;
+cursor: pointer;
+}
+.pagination .page:hover{
+  color: #18627e;
+  background: white;
+}
+/* End pagination */
+/*Start Footer */
+footer{
+  background: #1e7799;
+padding: 20px;
+text-align: center;
+color: white;
+font-size: 20px;
+}
+footer span{
+  font-weight: bold;
+color: #d7d8d9;
+}
+/* End Footer */
